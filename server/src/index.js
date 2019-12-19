@@ -25,7 +25,8 @@ mongoose.connection.on('error', (err) => {
 });
 
 app.get('/', requireAuth, (req, res) =>{
-    res.send(`Your email: ${ req.user.email }`);
+    
+    res.send(`Your email: ${ req.user.email}`);
 });
 
 app.listen(3000, () =>{
