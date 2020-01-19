@@ -13,8 +13,9 @@ app.use(bodyParser.json());
 app.use(authRoutes);
 app.use(trackRoutes);
 
-//const mongoUri = 'mongodb+srv://admin:admin@cluster0-fqrid.mongodb.net/test?retryWrites=true&w=majority';
-const mongoUri ='mongodb+srv://p00gz:JyKbVf7l6ATUk54h@emaily-uwsj6.mongodb.net/test?retryWrites=true'
+const mongoUri = 'mongodb+srv://admin:admin@cluster0-fqrid.mongodb.net/test?retryWrites=true&w=majority';
+//const mongoUri ='mongodb+srv://p00gz:JyKbVf7l6ATUk54h@emaily-uwsj6.mongodb.net/test?retryWrites=true'
+
 
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,

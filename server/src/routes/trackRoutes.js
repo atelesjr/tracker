@@ -9,7 +9,7 @@ const router = express.Router();
 router.use(requireAuth);
 
 router.get('/tracks', async (req, res) => {
-  console.log(req); //HERE IS THE CONSOLE LOG
+  //console.log(req); //HERE IS THE CONSOLE LOG
   const tracks = await Track.find({ userId: req.user._id });
 
   res.send(tracks);
